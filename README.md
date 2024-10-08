@@ -1,3 +1,4 @@
-# bits_form
+#Web Technology Course
 
-This a HTML code with CSS.
+This website is providing the web technology content chapter by chapter.
+Thank you for the visiting us😊.
