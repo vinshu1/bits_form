@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technologies Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>BITS Pilani</h1>
+            <h1>WIMS 2021</h1>
+            <h1>Web Technologies Course</h1>
+        </div>
+        <div class="menu">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#" onclick="loadContent('module1')">Module 1: Introduction to Web technologies</a></li>
+                <li><a href="#" onclick="loadContent('module2')">Module 2: HTML</a></li>
+                <li><a href="#" onclick="loadContent('module3')">Module 3: Cascading Style Sheets</a></li>
+                <li><a href="#" onclick="loadContent('module4')">Module 4: JavaScript Basics</a></li>
+                <li><a href="#" onclick="loadContent('module5')">Module 5: JavaScript and Document Object Model</a></li>
+                <li><a href="#" onclick="loadContent('module6')">Module 6: XML</a></li>
+                <li><a href="#" onclick="loadContent('module7')">Module 7: Web Servers</a></li>
+                <li><a href="#" onclick="loadContent('module8')">Module 8: Server Side Scripting with PHP</a></li>
+                <li><a href="#" onclick="loadContent('module9')">Module 9: Using PHP Frameworks</a></li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <h2>Welcome to the Web Technologies Course</h2>
+        </div>
+        <div class="footer">
+            <p>Website designed by Student NAME: Uttam Naik  and BITS ID: 2021wa86965</p>
+        </div>
+    </div>
+
+    <script>
+        function loadContent(module) {
+            let content = {
+                'module1': '<h2>Introduction to Web technologies: </h2><p>•What is Internet - History of the Internet and World Wide Web, World Wide Web Consortium (W3C)<br>• Web Servers, Web browsers<br>• Addressing, IP Address, Domain names, DNS Lookup, Uniform Resource Locator (URL), URL Paths<br>•Protocols - HTTP, HTTPS, FTP<br>•Web developer languages - HTML, CSS, XML, JavaScript, PHP</p>',
+                'module2': '<h2>HTML</h2><p>•HTML and XHTML•HTML Basics - Boilerplate HTML5 document and its structure<br>•HTML5 document structure and basic text mark up <br>•XHTML document validation<br>•Image formats and Image element<br>•Hypertext Links<br>•Lists<br>•Tables and Table sections<br>•Forms and Form elements - select, textarea, button, complete form<br>•meta elements•HTML5 new Elements<br>•HTML5 Web APIs</p>',
+                'module3': '<h2>Cascading Style Sheets</h2><p>•Level of style sheets, style specification formats<br>•Selector Forms - Simple, Class, Generic, id, Contextual, Pseudo, Universal<br>•Property-value forms<br>•Font Properties•List Properties<br>•Text Alignment<br>•Color<br>•Box Model and Text Flow<br>•Background images<br>•<span> and <div> tags<br>•Conflict resolution</p>',
+                'module4': '<h2>JavaScript Basics</h2><p>•Overview of JavaScript and its uses<br>•Object Orientation and JavaScript<br>•Primitives, Operations, and Expressions<br>•Screen output and Keyboard input<br>•Control statements<br>•Object creation and modification<br>•Arrays<br>•Functions<br>•Errors in Scripts</p>',
+                'module5': '<h2>JavaScript and Document Object Model</h2><p>•The Document Object Model (DOM)<br>•Element access<br>•Events and event handling<br>•Handling events - Body elements, button elements, textbox, password<br>•DOM 2 Event Model<br>•DOM Tree Traversal and Modification<br>•DOM Collections<br>•Dynamic Styles</p>',
+                'module6': '<h2>XML</h2><p>•Syntax and XML document structure<br>•Document Type Definitions (DTD)<br>•Namespaces<br>•XML Schemas</p>',
+                'module7': '<h2>Web Servers</h2><p>•What are Web Servers - Introduction<br>•HTTP transactions<br>•Multitier Application Architecture<br>•Client-side Scripting versus Server-Side Scripting<br>•Accessing Web Servers<br>•Case Study 1 - Microsoft Internet Information Server (IIS)<br>•Case Study 2 - Apache HTTP Server</p>',
+                'module8': '<h2>Server Side Scripting with PHP</h2>•General Syntactic Characteristics<br>•Primitives, Operations, and Expressions, Outputs<br>•Control Statements<br>•Arrays<br>•Functions<br>•Form handling, Form Processing and Business Logic<br>•Connecting to Database<br>•Dynamic Content<p></p>',
+                'module9': '<h2>Using PHP Frameworks</h2><p>•Getting Acquainted with MVC<br>•Comparing MVC with other Web Models<br>•Implementing MVC<br>•Getting to know about PHP Frameworks<br>•Why should we use Framework<br>•Focusing on Popular PHP Frameworks<br>•Micro Frameworks</p>',
+            };
+            document.getElementById('content').innerHTML = content[module];
+        }
+    </script>
+</body>
+</html>
